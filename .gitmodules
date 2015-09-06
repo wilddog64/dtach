@@ -1,0 +1,3 @@
+[submodule "bin"]
+    path = bin
+    url = git@github.com:wilddog64/vagrant_aws_scripts.git
