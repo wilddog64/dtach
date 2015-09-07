@@ -27,3 +27,5 @@ execute 'copy-dtach' do
   EOF
   action :nothing
 end
+
+include_recipe 'minitest-handler'
