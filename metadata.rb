@@ -7,3 +7,4 @@ long_description 'Installs/Configures dtach'
 version '0.1.0'
 
 depends 'git', '<= 4.3.3'
+depends 'minitest-handler', '<= 1.4.0'
