@@ -1,7 +1,7 @@
-file_cache_path = Chef::Config['file_cache_path']
-dtach_git_repo  = node['dtach']['git']['repo']
-app_name        = node['dtach']['git']['app']
-app_path        = ::File.join(file_cache_path, app_name)
+file_cache_path  = Chef::Config['file_cache_path']
+dtach_git_repo   = node['dtach']['git']['repo']
+app_name         = node['dtach']['git']['app']
+app_path         = ::File.join(file_cache_path, app_name)
 app_install_root = node['dtach']['install']['root']
 git app_name do
   repository dtach_git_repo
