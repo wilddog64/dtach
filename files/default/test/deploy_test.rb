@@ -16,4 +16,10 @@ describe_recipe 'deploy' do
     dtach_binary    = ::File.join(app_path, 'dtach')
     file(dtach_binary).must_exist.with(:mode, '0755').and(:group, 'root').and(:user, 'root')
   end
+
+  it 'should copy binary to install_root' do
+    install_root = node['dtach']['install']['root']
+    dtach_binary = ::File.join(install_root, 'dtach')
+    file(dtach_binary).must_exist.with(:mode, '0755').and(:group, 'root').and(:user, 'root')
+  end
 end
